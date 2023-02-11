@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            background: url('../multimedia/image/mainbg.jpg');
+            background-size: cover;
+        }
+        .container{
+            background: rgba(255, 255, 255, .5);
+            width: 60%;
+            height: 70vh;
+            /* display: block; */
+            position: absolute;
+            margin: auto;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+        }
+        .container .judul h1{
+            padding:3vh 0 2vh 5vh;
+        }
+        .container .judul p{
+            padding:0 7vh 3vh 7vh;
+            font-size: 20px;
+            text-align: justify;
+        }
+        .container .tautan{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            margin-top: 1vh;
+        }
+        .container .tautan a{
+            background: rgb(0, 0, 0);
+            width: 15%;
+            color: #fff;
+            text-decoration: none;
+            margin-right: 5%;
+            border-radius: 15px;
+            padding: 1vh;
+            text-align: center;
+            transition: all 0.3s ease 0s;
+        }
+        .container .tautan a:hover{
+            background: #75757571;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="judul">
+            <h1>Tentang Wombly</h1>
+            <p>
+                Wombly dibuat sebagai media entertainment yang memungkinkan pengguna 
+                dapat mendengarkan music dari perangkat desktop dan laptop.
+            </p>
+            <p>
+                Wombly menyediakan genre Electronic Dance Music dan Pop dengan beberapa 
+                artist terkenal dari seluruh dunia. Wombly juga menyediakan daftar
+                Top music global dan beberapa playlist untuk menemani pengguna sesuai 
+                dengan suasana hati.
+            </p>
+            <p>
+                Wombly. Listen to all your favorite artists in a new way.
+            </p>
+        </div>
+        <div class="tautan">
+            <a href="../index.html">Back</a>
+            <a href="./learnmore.html">Learn More</a>
+        </div>
+    </div>
+</body>
+</html>

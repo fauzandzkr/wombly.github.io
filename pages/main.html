@@ -1,0 +1,1087 @@
+<!-- fokus genre -->
+<!-- playlist berdasarkan taun album listening  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wombly</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        .suggested-album a .card-album{
+            transition: all 0.3s ease 0s;
+            width: 70vh; 
+            border-radius: 15px;
+        }
+        .suggested-album a .card-album .judul-flex{
+            width: 50vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .suggested-album a .card-album:hover{
+            background: rgba(165, 165, 165, 0.575);
+        }
+    </style>
+</head>
+<body>
+    <!-- START CONTAINER -->
+    <div class="container">
+
+        <!-- START LEFT SIDE NAVIGATION -->
+        <div class="left-side-nav">
+            <div>
+                <a href="../index.html" class="link-lp">
+                    <img src="../multimedia/image/wombly-logo.png" alt="">
+                </a>
+                <a href="#" class="home">Home</a>
+                <a href="#album">Album</a>
+                <a href="#genre">Genre</a>
+            </div>
+            <div class="daftarLagu">
+                <h4>
+                    Top Playlist
+                </h4>
+                <li>
+                    <a href="./left-side-playlist-chill-hits.html">Chill Hits</a>
+                </li>
+                <li>
+                    <a href="./left-side-playlist-love-pop.html">Love Pop</a>                                                                                                                                                                                                                                                                                                                                                                              
+                </li>
+                <li>
+                    <a href="./left-side-playlist-kopikustik.html">Kopikustik</a>
+                </li>
+                <li>
+                    <a href="./left-side-playlist-generasi-galau.html">Generasi Galau</a>
+                </li>
+                <li>
+                    <a href="./left-side-playlist-moodbooster.html">Moodbooster</a>
+                </li>
+                <li>
+                    <a href="./left-side-playlist-dance-party.html">Dance Party</a>
+                </li>
+                <li>
+                    <a href="./left-side-playlist-comfort-zone.html">Comfort Zone</a>
+                </li>
+                <li>
+                    <a href="./left-side-playlist-chill-hits.html">Chill Hits</a>
+                </li>
+                <li>
+                    <a href="./left-side-playlist-love-pop.html">Love Pop</a>                                                                                                                                                                                                                                                                                                                                                                              
+                </li>
+                <li>
+                    <a href="./left-side-playlist-kopikustik.html">Kopikustik</a>
+                </li>
+                <li>
+                    <a href="./left-side-playlist-generasi-galau.html">Generasi Galau</a>
+                </li>
+                <li>
+                    <a href="./left-side-playlist-moodbooster.html">Moodbooster</a>
+                </li>
+                <li>
+                    <a href="./left-side-playlist-dance-party.html">Dance Party</a>
+                </li>
+                <li>
+                    <a href="./left-side-playlist-comfort-zone.html">Comfort Zone</a>
+                </li>
+            </div>
+        </div>
+        <!-- END LEFT SIDE NAVIGATION -->
+
+        <!-- START RIGHT SIDE NAVIGATION -->
+        <div class="right-side">
+
+            <!-- START MAIN CONTENT -->
+            <div class="main-content">
+                
+                <!-- START CONTENT SLIDER DAN PENCARIAN-->
+                <div class="content-slider">
+                    <div class="pencarian">
+                        <input type="text" placeholder="Search here ...">
+                    </div>
+                    <!--image slider start-->
+                    <div class="slider">
+                        <div class="slides">
+
+                            <!--radio buttons start-->
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
+                            <!--radio buttons end-->
+
+                            <!--slide images start-->
+                            <div class="slide first">
+                                <img src="../multimedia/image/martin-garrix.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="../multimedia/image/tomorrowland.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="../multimedia/image/david-guetta.jpg" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="../multimedia/image/sum-start-here.jpg" alt="">
+                            </div>
+                            <!-- <div class="slide">
+                                <img src="../multimedia/image/sum-start-here.jpg" alt="">
+                            </div> -->
+                            <!--slide images end-->
+
+                            <!--automatic navigation start-->
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                                <div class="auto-btn4"></div>
+                            </div>
+                            <!--automatic navigation end-->
+                        </div>
+
+                        <!--manual navigation start-->
+                        <div class="navigation-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                        </div>
+                        <!--manual navigation end-->
+                    </div>
+                    <!--image slider end-->
+                </div>
+                
+
+                <script type="text/javascript">
+                    var counter = 1;
+                    setInterval(function(){
+                      document.getElementById('radio' + counter).checked = true;
+                      counter++;
+                      if(counter > 4){
+                        counter = 1;
+                      }
+                    }, 5000);
+                </script>
+
+<!--------------------------- TITLE --------------------------->
+                <div class="title">
+                    <h3>Suggested Artists</h3>
+                    <a href="./suggested-artist.html">See More</a>
+                </div>
+
+<!--------------------------- SUGGESTED ARTIST --------------------------->
+                <!-- START SUGGESTED ARTIST -->
+                <div class="suggested-artist">
+                    <a href="./playlist-one-direction.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-one-direction/suggested-artist-one-direction.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>One Direction</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-martin-garrix.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-martin-garrix/suggested-artists-martin-garrix.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Martin Garrix</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-ariana-grande.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-ariana-grande/suggested-artists-ariana-grande.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Ariana Grande</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-the-weeknd.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-the-weeknd/suggested-artist-the-weeknd.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>The Weeknd</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-thechainsmokers.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-the-chainsmokers/suggested-artist-the-chainsmokers.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Chainsmokers</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-avicii.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-avicii/suggested-artist-avicii.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Avicii</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- END SUGGESTED ARTIST -->          
+                
+       
+
+                                <!--------------------------- TITLE --------------------------->
+                <div class="title" id="genre">
+                    <h3>Suggested Genre</h3>
+                </div>            
+
+<!--------------------------- SUGGESTED GENRE --------------------------->
+                <!-- START SUGGESTED GENRE -->
+                <div class="suggested-artist">
+                    <a href="#edm" class="genre-color1">
+                        <div class="card-genre">
+                            <!-- <img src="../multimedia/image/suggested-artist-one-d" class="card-img-top" alt="..."> -->
+                            <div class="card-body">
+                              <p class="genre-text">DANCE/ELECTRONIC</p>
+                              <!-- <p>Artist</p> -->
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#pop" class="genre-color2">
+                        <div class="card-genre">
+                            <!-- <img src="../multimedia/image/suggested-artists-one-direction.jpg" class="card-img-top" alt="..."> -->
+                            <div class="card-body">
+                              <p class="genre-text">POP</p>
+                              <!-- <p>Artist</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- END SUGGESTED GENRE -->    
+
+                <div class="title" id="album">
+                    <h3>Suggested Albums</h3>
+                </div>      
+
+                <div class="suggested-album">
+                    <a href="./playlist-lauv.html" class="genre-color1">
+                        <div class="card-album">
+                            <img src="../multimedia/image/suggested-artist-lauv/album-howimfeeling.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="judul-flex">
+                                    <p class="genre-text">How I'm Feeling</p>
+                                    <p class="genre-text">LAUV</p>
+                                </div>
+                                <p>2020</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-the-weeknd.html" class="genre-color1">
+                        <div class="card-album">
+                            <img src="../multimedia/image/suggested-artist-the-weeknd/album-afterhours.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="judul-flex">
+                                    <p class="genre-text">After Hours</p>
+                                    <p class="genre-text">THE WEEKND</p>
+                                </div>
+                                <p>2020</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="suggested-album">
+                    <a href="./playlist-jonas-blue.html" class="genre-color1">
+                        <div class="card-album">
+                            <img src="../multimedia/image/suggested-artist-jonas-blue/album-blue.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="judul-flex">
+                                    <p class="genre-text">Blue</p>
+                                    <p class="genre-text">JONAS BLUE</p>
+                                </div>
+                                <p>2018</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-marshmello.html" class="genre-color1">
+                        <div class="card-album">
+                            <img src="../multimedia/image/suggested-artist-marshmello/album-joytime.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="judul-flex">
+                                    <p class="genre-text">Joytime</p>
+                                    <p class="genre-text">MARSHMELLO</p>
+                                </div>
+                                <p>2016</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="suggested-album">
+                    <a href="./playlist-alan-walker.html" class="genre-color1">
+                        <div class="card-album">
+                            <img src="../multimedia/image/suggested-artist-alan-walker/album-faded.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="judul-flex">
+                                    <p class="genre-text">Faded</p>
+                                    <p class="genre-text">ALAN WALKER</p>
+                                </div>
+                                <p>2016</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-one-direction.html" class="genre-color1">
+                        <div class="card-album">
+                            <img src="../multimedia/image/suggested-artist-one-direction/album-upallnight.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="judul-flex">
+                                    <p class="genre-text">Up All Night</p>
+                                    <p class="genre-text">ONE DIRECTION</p>
+                                </div>
+                                <p>2011</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="suggested-album">
+                    <a href="./playlist-ariana-grande.html" class="genre-color1">
+                        <div class="card-album">
+                            <img src="../multimedia/image/suggested-artist-ariana-grande/album-yourstruly.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="genre-text"></p>
+                                <div class="judul-flex">
+                                <p class="genre-text">Yours Truly</p>
+                                <p class="genre-text">ARIANA GRANDE</p>
+                            </div>
+                                <p>2013</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-martin-garrix.html" class="genre-color1">
+                        <div class="card-album">
+                            <img src="../multimedia/image/suggested-artist-martin-garrix/album-goldskies.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <div class="judul-flex">
+                                <p class="genre-text">Gold Skies</p>
+                                <p class="genre-text">MARTIN GARRIX</p>
+                            </div>
+                                <p>2014</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+                <!--------------------------- TITLE --------------------------->
+                <div class="title" id="edm">
+                    <h3>Electronic Dance Music</h3>
+                </div>            
+
+<!--------------------------- SUGGESTED ARTIST --------------------------->
+                <!-- START SUGGESTED ARTIST -->
+                <div class="suggested-artist">
+                    <a href="./playlist-martin-garrix.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-martin-garrix/suggested-artists-martin-garrix.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Martin Garrix</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-thechainsmokers.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-the-chainsmokers/suggested-artist-the-chainsmokers.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Chainsmokers</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-avicii.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-avicii/suggested-artist-avicii.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Avicii</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-david-guetta.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-david-guetta/suggested-artist-david-guetta.JPG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>David Guetta</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-marshmello.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-marshmello/suggested-artist-marshmello.JPG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Marshmello</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-alan-walker.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-alan-walker/suggested-artist-alan-walker.JPG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Alan Walker</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="suggested-artist">
+                    <a href="./playlist-jonas-blue.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-jonas-blue/suggested-artist-jonas-blue.JPG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Jonas Blue</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- END SUGGESTED ARTIST -->  
+
+                <!--------------------------- TITLE --------------------------->
+                <div class="title" id="pop">
+                    <h3>Pop</h3>
+                </div>   
+<!--------------------------- SUGGESTED ARTIST --------------------------->
+                <!-- START SUGGESTED ARTIST -->
+                <div class="suggested-artist">
+                    <a href="./playlist-one-direction.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-one-direction/suggested-artist-one-direction.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>One Direction</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-ariana-grande.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-ariana-grande/suggested-artists-ariana-grande.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Ariana Grande</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-the-weeknd.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-the-weeknd/suggested-artist-the-weeknd.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>The Weeknd</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-bruno-mars.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-bruno-mars/suggested-artist-bruno-mars.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Bruno Mars</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-lauv.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-lauv/suggested-artist-lauv.JPG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Lauv</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-taylor-swift.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-taylor-swift/suggested-artist-taylor-swift.JPG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Taylor Swift</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="suggested-artist">
+                    <a href="./playlist-maroon5.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-maroon-5/suggested-artist-maroon-5.JPG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Maroon 5</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-justin-bieber.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-justin-bieber/suggested-artist-justin-bieber.JPG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Justin Bieber</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-why-dont-we.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-why-dont-we/suggested-artist-why-dont-we.JPG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Why Don't We</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-harry-styles.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-harry-styles/suggested-artist-harry-styles.JPG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Harry Styles</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./playlist-sam-smith.html">
+                        <div class="card">
+                            <img src="../multimedia/image/suggested-artist-sam-smith/suggested-artist-sam-smith.JPG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p>Sam Smith</p>
+                              <p>Artist</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" style="background: rgba(255, 255, 255, 0); width: 130px;">
+                        <div class="card">
+                            <!-- <img src="../multimediaimage/suggested-artist-sam-smith/suggested-artist-sam-smith.JPG" class="card-img-top" alt="..."> -->
+                            <div class="card-body">
+                              <!-- <p>Sam Smith</p>
+                              <p>Artist</p> -->
+                              
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT -->
+
+
+
+
+            <div class="weekly-list-area">
+
+                <!-- START WEEKLY LIST -->
+                <div class="weekly-list">
+                    <h4>
+                        Top Songs - Global
+                    </h4>
+                    <div class="menu-lagu">
+                        <li class="laguItem">
+                            <img src="../multimedia/poster/top-global/1.jpg" >
+                            <h6>
+                                Flowers
+                                <div class="subtitle">Miley Cyrus</div>
+                            </h6>
+                            <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                        </li>
+                        <li class="laguItem">
+                            <img src="../multimedia/poster/top-global/2.jpg" alt="Alan">
+                            <h6>
+                                Kill Bill
+                                <div class="subtitle">SZA</div>
+                            </h6>
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                        </li>
+                        <li class="laguItem">
+                            <img src="../multimedia/poster/top-global/3.jpg" alt="Alan">
+                            <h6>
+                                Creepin'
+                                <div class="subtitle">Metro Boomin</div>
+                            </h6>
+                            <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                        </li>
+                        <li class="laguItem">
+                            <img src="../multimedia/poster/top-global/4.jpg" alt="Alan">
+                            <h6>
+                                Unholy
+                                <div class="subtitle">Sam Smith</div>
+                            </h6>
+                            <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                        </li>
+                        <li class="laguItem">
+                            <img src="../multimedia/poster/top-global/5.jpg" alt="Alan">
+                            <h6>
+                                As it Was
+                                <div class="subtitle">Harry Styles</div>
+                            </h6>
+                            <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+                        </li>
+                        <li class="laguItem">
+                            <img src="../multimedia/poster/top-global/6.jpg" alt="Alan">
+                            <h6>
+                                I'm Good
+                                <div class="subtitle">David Guetta</div>
+                            </h6>
+                            <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+                        </li>
+                        <li class="laguItem">
+                            <img src="../multimedia/poster/top-global/7.jpg" alt="Alan">
+                            <h6>
+                                La Bachata
+                                <div class="subtitle">Manuel Turizo</div>
+                            </h6>
+                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                        </li>
+                        <li class="laguItem">
+                            <img src="../multimedia/poster/top-global/8.jpg" alt="Alan">
+                            <h6>
+                                Anti Hero
+                                <div class="subtitle">Taylor Swift</div>
+                            </h6>
+                            <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+                        </li>
+                        <li class="laguItem">
+                            <img src="../multimedia/poster/top-global/9.jpg" alt="Alan">
+                            <h6>
+                                La Jumpa
+                                <div class="subtitle">Arcangel</div>
+                            </h6>
+                            <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                        </li>
+                        <li class="laguItem">
+                            <img src="../multimedia/poster/top-global/10.jpg" alt="Alan">
+                            <h6>
+                                Golden Hour
+                                <div class="subtitle">JVKE</div>
+                            </h6>
+                            <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                        </li>
+                    </div>
+                </div>
+                <!-- END WEEKLY LIST -->
+
+                <!-- START CONCERT INFO -->
+                <div class="concert-info">
+                    <h4>
+                        Concert Info
+                    </h4>
+                    <!-- popup -->
+                    <div class="popup">
+                        <!-- top bar -->
+                        <div class="top-bar">
+                            <p class="image-name">img1.png</p>
+                            <span class="close-btn"></span>
+                        </div>
+                        <!-- arrows -->
+                        <button class="arrow-btn left-arrow"><img src="../multimedia/image/concert-info/arrow.png" alt=""></button>
+                        <button class="arrow-btn right-arrow"><img src="../multimedia/image/concert-info/arrow.png" alt=""></button>
+                        <!-- image -->
+                        <img src="../multimedia/image/concert-info/img1.jpg" class="large-image" alt="">
+                        <!-- image-index -->
+                        <h1 class="index">01</h1>
+                    </div>
+                    <div class="rumah">
+                        <div class="bungkus">
+                            <img src="../multimedia/image/concert-info/img1.jpg" alt="" class="image">
+                        </div>
+                        <div class="bungkus">
+                            <img src="../multimedia/image/concert-info/img2.jpg" alt="" class="image">
+                        </div>
+                        <div class="bungkus">
+                            <img src="../multimedia/image/concert-info/img3.jpg" alt="" class="image">
+                        </div>
+                        <div class="bungkus">
+                            <img src="../multimedia/image/concert-info/img4.jpg" alt="" class="image">
+                        </div>
+                        <div class="bungkus">
+                            <img src="../multimedia/image/concert-info/img5.jpg" alt="" class="image">
+                        </div>
+                        <div class="bungkus">
+                            <img src="../multimedia/image/concert-info/img6.jpg" alt="" class="image">
+                        </div>
+                    </div>
+                    <!-- END CONCERT INFO -->
+                </div>
+            </div>
+
+            <!-- START MASTER PLAY -->
+            <div class="master_play">
+                <div class="wave">
+                    <div class="wave1"></div>
+                    <div class="wave1"></div>
+                    <div class="wave1"></div>
+                </div>
+                <img src="../multimedia/poster/1.jpg" id="poster_master_play">
+                <h5 id="title">One Direction<br>
+                    <!-- <div class="subtitle">Bankim Chandra</div> -->
+                </h5>
+                <div class="icon">
+                    <i class="bi bi-skip-start-fill" id="back"></i>
+                    <i class="bi bi-play-fill" id="masterPlay"></i>
+                    <i class="bi bi-skip-end-fill" id="next"></i>
+                </div>
+                <span id="currentStart">0:00</span>
+                <div class="bar">
+                    <input type="range" id="seek" min="0" value="0" max="100">
+                    <div class="bar2" id="bar2"></div>
+                    <div class="dot"></div>
+                </div>
+                <span id="currentEnd">0:00</span>
+        
+                <div class="vol">
+                    <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+                    <input type="range" id="vol" min="0" value="30" max="100">
+                    <div class="vol_bar"></div>
+                    <div class="dot" id="vol_dot"></div>
+                </div>
+            </div>
+            <!-- END MASTER PLAY -->
+        </div>
+        <!-- END RIGHT SIDE NAVIGATION -->
+        
+    </div>
+    <!-- END CONTAINER -->
+    <script>
+const music = new Audio('vande.mp3');
+
+// create Array 
+
+const songs = [
+    {
+        id:'1',
+        songName:`<div class="subtitle">Flowers</div>`,
+        poster: "../multimedia/poster/top-global/1.jpg"
+    },
+    {
+        id:'2',
+        songName:`<div class="subtitle">Kill Bill</div>`,
+        poster: "../multimedia/poster/top-global/2.jpg"
+    },
+    // all object type 
+    {
+        id:"3",
+        songName: `<div class="subtitle">Creepin'</div>`,
+        poster: "../multimedia/poster/top-global/3.jpg",
+    },
+    {
+        id:"4",
+        songName: `<div class="subtitle">Unholy</div>`,
+        poster: "../multimedia/poster/top-global/4.jpg",
+    },
+    {
+        id:"5",
+        songName: `<div class="subtitle">As it Was</div>`,
+        poster: "../multimedia/poster/top-global/5.jpg",
+    },
+    {
+        id:"6",
+        songName: `<div class="subtitle">I'm Good</div>`,
+        poster: "../multimedia/poster/top-global/2.jpg",
+    },
+    {
+        id:"7",
+        songName: `<div class="subtitle">La Bachata</div>`,
+        poster: "../multimedia/poster/top-global/1.jpg",
+    },
+    {
+        id:"8",
+        songName: `<div class="subtitle">Anti Hero</div>`,
+        poster: "../multimedia/poster/top-global/4.jpg",
+    },
+    {
+        id:"9",
+        songName: `<div class="subtitle">La Jumpa</div>`,
+        poster: "../multimedia/poster/top-global/3.jpg",
+    },
+    {
+        id:"10",
+        songName: `<div class="subtitle">Golden Hour</div>`,
+        poster: "../multimedia/poster/top-global/3.jpg",
+    },
+    {
+        id:"11",
+        songName: `<div class="subtitle">Golden Hour</div>`,
+        poster: "../multimedia/poster/top-global/3.jpg",
+    },
+]
+
+Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=>{
+    element.getElementsByTagName('img')[0].src = songs[i].poster;
+    element.getElementsByTagName('h4')[0].innerHTML = songs[i].songName;
+})
+
+
+let masterPlay = document.getElementById('masterPlay');
+let wave = document.getElementsByClassName('wave')[0];
+
+masterPlay.addEventListener('click',()=>{
+    if (music.paused || music.currentTime <=0) {
+        music.play();
+        masterPlay.classList.remove('bi-play-fill');
+        masterPlay.classList.add('bi-pause-fill');
+        wave.classList.add('active2');
+    } else {
+        music.pause();
+        masterPlay.classList.add('bi-play-fill');
+        masterPlay.classList.remove('bi-pause-fill');
+        wave.classList.remove('active2');
+    }
+} )
+
+
+const makeAllPlays = () =>{
+    Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
+            element.classList.add('bi-play-circle-fill');
+            element.classList.remove('bi-pause-circle-fill');
+    })
+}
+const makeAllBackgrounds = () =>{
+    Array.from(document.getElementsByClassName('songItem')).forEach((element)=>{
+            element.style.background = "rgb(105, 105, 170, 0)";
+    })
+}
+
+let index = 0;
+let poster_master_play = document.getElementById('poster_master_play');
+let title = document.getElementById('title');
+Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
+    element.addEventListener('click', (e)=>{
+        index = e.target.id;
+        makeAllPlays();
+        e.target.classList.remove('bi-play-circle-fill');
+        e.target.classList.add('bi-pause-circle-fill');
+        music.src = `../multimedia/audio/top-global/${index}.mp3`;
+        poster_master_play.src =`../multimedia/poster/top-global/${index}.jpg`;
+        music.play();
+        let song_title = songs.filter((ele)=>{
+            return ele.id == index;
+        })
+
+        song_title.forEach(ele =>{
+            let {songName} = ele;
+            title.innerHTML = songName;
+        })
+        masterPlay.classList.remove('bi-play-fill');
+        masterPlay.classList.add('bi-pause-fill');
+        wave.classList.add('active2');
+        music.addEventListener('ended',()=>{
+            masterPlay.classList.add('bi-play-fill');
+            masterPlay.classList.remove('bi-pause-fill');
+            wave.classList.remove('active2');
+        })
+        makeAllBackgrounds();
+        Array.from(document.getElementsByClassName('songItem'))[`${index-1}`].style.background = "rgb(219, 101, 248, 0.567)";
+    })
+})
+
+
+let currentStart = document.getElementById('currentStart');
+let currentEnd = document.getElementById('currentEnd');
+let seek = document.getElementById('seek');
+let bar2 = document.getElementById('bar2');
+let dot = document.getElementsByClassName('dot')[0];
+
+music.addEventListener('timeupdate',()=>{
+    let music_curr = music.currentTime;
+    let music_dur = music.duration;
+
+    let min = Math.floor(music_dur/60);
+    let sec = Math.floor(music_dur%60);
+    if (sec<10) {
+        sec = `0${sec}`
+    }
+    currentEnd.innerText = `${min}:${sec}`;
+
+    let min1 = Math.floor(music_curr/60);
+    let sec1 = Math.floor(music_curr%60);
+    if (sec1<10) {
+        sec1 = `0${sec1}`
+    }
+    currentStart.innerText = `${min1}:${sec1}`;
+
+    let progressbar = parseInt((music.currentTime/music.duration)*100);
+    seek.value = progressbar;
+    let seekbar = seek.value;
+    bar2.style.width = `${seekbar}%`;
+    dot.style.left = `${seekbar}%`;
+})
+
+seek.addEventListener('change', ()=>{
+    music.currentTime = seek.value * music.duration/100;
+})
+
+music.addEventListener('ended', ()=>{
+    masterPlay.classList.add('bi-play-fill');
+    masterPlay.classList.remove('bi-pause-fill');
+    wave.classList.remove('active2');
+})
+
+
+let vol_icon = document.getElementById('vol_icon');
+let vol = document.getElementById('vol');
+let vol_dot = document.getElementById('vol_dot');
+let vol_bar = document.getElementsByClassName('vol_bar')[0];
+
+vol.addEventListener('change', ()=>{
+    if (vol.value == 0) {
+        vol_icon.classList.remove('bi-volume-down-fill');
+        vol_icon.classList.add('bi-volume-mute-fill');
+        vol_icon.classList.remove('bi-volume-up-fill');
+    }
+    if (vol.value > 0) {
+        vol_icon.classList.add('bi-volume-down-fill');
+        vol_icon.classList.remove('bi-volume-mute-fill');
+        vol_icon.classList.remove('bi-volume-up-fill');
+    }
+    if (vol.value > 50) {
+        vol_icon.classList.remove('bi-volume-down-fill');
+        vol_icon.classList.remove('bi-volume-mute-fill');
+        vol_icon.classList.add('bi-volume-up-fill');
+    }
+
+    let vol_a = vol.value;
+    vol_bar.style.width = `${vol_a}%`;
+    vol_dot.style.left = `${vol_a}%`;
+    music.volume = vol_a/100;
+})
+
+
+
+let back = document.getElementById('back');
+let next = document.getElementById('next');
+
+back.addEventListener('click', ()=>{
+    index -= 1;
+    if (index < 1) {
+        index = Array.from(document.getElementsByClassName('songItem')).length;
+    }
+    music.src = `../multimedia/audio/top-global/${index}.mp3`;
+    poster_master_play.src =`../multimedia/poster/top-global/${index}.jpg`;
+    music.play();
+    let song_title = songs.filter((ele)=>{
+        return ele.id == index;
+    })
+
+    song_title.forEach(ele =>{
+        let {songName} = ele;
+        title.innerHTML = songName;
+    })
+    makeAllPlays()
+
+    document.getElementById(`${index}`).classList.remove('bi-play-fill');
+    document.getElementById(`${index}`).classList.add('bi-pause-fill');
+    makeAllBackgrounds();
+    Array.from(document.getElementsByClassName('songItem'))[`${index}`].style.background = "rgb(105, 105, 170, .1)";
+    // Array.from(document.getElementsByClassName('songItem'))[`${index-1}`].style.background = "rgb(105, 105, 170, .1)";
+    
+})
+next.addEventListener('click', ()=>{
+    index -= 0;
+    index += 1;
+    if (index > Array.from(document.getElementsByClassName('songItem')).length) {
+        index = 1;
+        }
+    music.src = `../multimedia/audio/top-global/${index}.mp3`;
+    poster_master_play.src =`../multimedia/poster/top-global/${index}.jpg`;
+    music.play();
+    let song_title = songs.filter((ele)=>{
+        return ele.id == index;
+    })
+
+    song_title.forEach(ele =>{
+        let {songName} = ele;
+        title.innerHTML = songName;
+    })
+    makeAllPlays()
+
+    document.getElementById(`${index}`).classList.remove('bi-play-fill');
+    document.getElementById(`${index}`).classList.add('bi-pause-fill');
+    makeAllBackgrounds();
+    Array.from(document.getElementsByClassName('songItem'))[`${index-1}`].style.background = "rgb(105, 105, 170, .1)";
+    
+})
+
+
+let left_scroll = document.getElementById('left_scroll');
+let right_scroll = document.getElementById('right_scroll');
+let pop_song = document.getElementsByClassName('pop_song')[0];
+
+left_scroll.addEventListener('click', ()=>{
+    pop_song.scrollLeft -= 330;
+})
+right_scroll.addEventListener('click', ()=>{
+    pop_song.scrollLeft += 330;
+})
+
+
+let left_scrolls = document.getElementById('left_scrolls');
+let right_scrolls = document.getElementById('right_scrolls');
+let item = document.getElementsByClassName('item')[0];
+
+left_scrolls.addEventListener('click', ()=>{
+    item.scrollLeft -= 330;
+})
+right_scrolls.addEventListener('click', ()=>{
+    item.scrollLeft += 330;
+})
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!--image slider end-->
+                <!-- START SLIDER -->
+                <!-- <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <div class="slide-first">
+                            <img src="/multimedia/image/martin-garrix.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="/multimedia/image/tomorrowland.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="/multimedia/image/david-guetta.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="/multimedia/image/sum-start-here.jpg" alt="">
+                        </div>
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                        <div class="navigation-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- END SLIDER -->

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            background: url('../multimedia/image/mainbg.jpg');
+            background-size: cover;
+        } 
+        .container{
+            background: rgba(255, 255, 255, .5);
+            box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+            width: 30%;
+            height: 65vh;
+            position: absolute;
+            margin:auto;
+            top: 0; right: 0; bottom: 0; left: 0;
+            border-radius: 20px;
+        }
+        .container h1{
+            padding:4vh 0 4vh 0;
+            text-align: center;
+        }
+        .container .pp{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            width: 20vh;
+        }
+        .container h2{
+            text-align: center;
+            margin-top: 3vh;
+        }
+        .container .tautan{
+            display: flex;
+            justify-content: center;
+        }
+        .container .tautan a{
+            /* background: wheat; */
+            margin: 2vh 2vh 0 2vh;
+        }
+        .container .tautan img{    
+            width: 5vh;
+        }
+        .container .kembali{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .container .kembali a{
+            background: #000;
+            color: #fff;
+            margin-right: 7%;
+            width: 15%;
+            border-radius: 15px;
+            padding: 1vh;
+            margin-top: 2vh;
+            text-align: center;
+            transition: all 0.3s ease 0s;
+            text-decoration: none;
+        }.container .kembali a:hover{
+            background: #75757571;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pengembang Wombly</h1>
+        <img src="../multimedia/image/profile.jpg" alt="" class="pp">
+        <h2>Fauzan Dzikri Nugroho</h2>
+        <div class="tautan">
+            <a href="https://www.instagram.com/fauzandzkr_/">
+                <img src="../multimedia/image/logo-ig2.png" alt="">
+            </a>
+            <a href="https://github.com/fauzandzkr">
+                <img src="../multimedia/image/logo-github.png" alt="">
+            </a>
+        </div>
+        <div class="kembali">
+            <a href="../index.html">Back</a>
+        </div>
+    </div>
+    
+</body>
+</html>
